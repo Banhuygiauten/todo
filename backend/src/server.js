@@ -39,6 +39,6 @@ if (process.env.NODE_ENV === "production") {
 
 connectDB().then(() => {
   app.listen(PORT, () => {
-    console.log(`server bắt đầu trên cổng ${PORT}`);
+    console.log(`server bắt đầu trên cổng: http://localhost:${PORT}`);
   });
 });

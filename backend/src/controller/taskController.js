@@ -64,11 +64,11 @@ export const createTask = async (req, res) => {
 
 export const updateTask = async (req, res) => {
   try {
-    const { tittle, status, completeAt } = req.body;
+    const { title, status, completeAt } = req.body;
     const updatedTask = await Task.findByIdAndUpdate(
       req.params.id,
       {
-        tittle,
+        title,
         status,
         completeAt,
       },

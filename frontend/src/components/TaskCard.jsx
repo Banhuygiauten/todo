@@ -143,7 +143,6 @@ const TaskCard = ({ task, index, handleTaskChanged }) => {
         </div>
 
         {/* Nút sửa / xoá */}
-        {/* Mobile: luôn hiện | Desktop: hover */}
         <div className="inline-flex gap-2 sm:hidden sm:group-hover:inline-flex">
           <Button
             variant="ghost"
